@@ -1,4 +1,4 @@
-////var br = document.createElement("br")
+///var br = document.createElement("br")
 function convert1(){
      var fromcurrency = document.getElementById("from").value
      var tocurrency = document.getElementById("to").value
