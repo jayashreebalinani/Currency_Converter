@@ -18,5 +18,4 @@ function convert1(){
   //.then(response => console.log(Object.values(response)))
   .then(response=>document.getElementById("output").innerHTML=(Object.values(response)[0])+' '+tocurrency)
   .then(response => document.getElementById("input").innerHTML= oldamount+' '+fromcurrency+' '+'=')
-  
   }
