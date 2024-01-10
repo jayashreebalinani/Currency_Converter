@@ -3,10 +3,6 @@ function convert1(){
      var fromcurrency = document.getElementById("from").value
      var tocurrency = document.getElementById("to").value
      var oldamount = document.getElementById("amount").value
-
-	 //'https://currency-conversion-and-exchange-rates.p.rapidapi.com/convert?from='+fromcurrency+'&to='+tocurrency+'&amount='+oldamount
-
-     //var url = 'https://currency-converter-by-api-ninjas.p.rapidapi.com/v1/convertcurrency?have='+fromcurrency+'&want='+tocurrency+'&amount='+oldamount;
      var url =  'https://currency-conversion-and-exchange-rates.p.rapidapi.com/convert?from='+fromcurrency+'&to='+tocurrency+'&amount='+oldamount
 	 const options = {
     method: 'GET',
@@ -18,8 +14,6 @@ function convert1(){
 
   fetch(url,options)
   .then(response => response.json())
-  //.then(response => console.log(Object.values(response)[2].rate))
-  //.then(response => console.log(Object.values(response)))
   .then(response=>document.getElementById("output").innerHTML=(Object.values(response)[2].rate)+' '+tocurrency)
   .then(response => document.getElementById("input").innerHTML= oldamount+' '+fromcurrency+' '+'=')
   }
