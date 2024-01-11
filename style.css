@@ -9,7 +9,7 @@
     
 }
 h1{
-    color: white;
+    color: rgb(255, 254, 254);
 }
 .body{
     background-color: rgb(10, 9, 97);
@@ -81,8 +81,11 @@ h1{
     font-size: 40px;
 }
 @media screen and (max-width: 900px){
+    h1{
+        color: rgb(255, 255, 255);
+    }
     .body{
-        background-color: rgb(186, 185, 184);
+        background-color: rgb(10, 9, 97);
     }
     .div-1{
         height: 270px;
@@ -123,6 +126,9 @@ h1{
 @media screen and (max-width: 600px){
     .body{
         background-color: rgb(255, 255, 255);
+    }
+    h1{
+        color: black;
     }
     .div-1{
     height: 350px;
@@ -168,12 +174,10 @@ h1{
         margin-top: 20px;
         margin-left: 1px;
         font-size: 30px;
-     
     }
     #input{
        
         font-size: 20px;
-       
     }
     
 }
