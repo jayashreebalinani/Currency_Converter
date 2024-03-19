@@ -19,7 +19,7 @@ function convert1(){
   fetch(url,options)
   .then(response => response.json())
   //.then(response => console.log(Object.values(response)[2].rate))
-  //.then(response => console.log(Object.values(response)))
+  //.then(response => console.log(Object.values(response))
   .then(response=>document.getElementById("output").innerHTML=(oldamount*(Object.values(response)[2].rate)+' '+tocurrency))
   .then(response => document.getElementById("input").innerHTML= oldamount+' '+fromcurrency+' '+'=')
   }
