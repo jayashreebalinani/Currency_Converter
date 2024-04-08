@@ -1,5 +1,6 @@
 var br = document.createElement("br")
 function convert1(){
+	//gets the data from users
      var fromcurrency = document.getElementById("from").value
      var tocurrency = document.getElementById("to").value
      var oldamount = document.getElementById("amount").value
