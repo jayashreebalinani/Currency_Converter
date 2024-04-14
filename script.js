@@ -24,5 +24,6 @@ function convert1(){
 	  //the get get modified and upended
 	  //takes value from the object in server
   .then(response=>document.getElementById("output").innerHTML=(oldamount*(Object.values(response)[2].rate)+' '+tocurrency))
+	  //get the data from input and convert it into output
   .then(response => document.getElementById("input").innerHTML= oldamount+' '+fromcurrency+' '+'=')
   }
