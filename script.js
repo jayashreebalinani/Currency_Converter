@@ -21,7 +21,7 @@ function convert1(){
   .then(response => response.json())
   //.then(response => console.log(Object.values(response)[2].rate))
 
-	  //the get get modified and upended
+	  //the get get modified 
 	  //takes value from the object in server
   .then(response=>document.getElementById("output").innerHTML=(oldamount*(Object.values(response)[2].rate)+' '+tocurrency))
 	  //get the data from input and convert it into output
